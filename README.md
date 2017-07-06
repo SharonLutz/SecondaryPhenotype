@@ -4,7 +4,7 @@ The SecondaryPhenotype R package uses proportional odds logistic regression to t
 ```
 install.packages("devtools") # devtools must be installed first
 
-devtools::install_github("SharonLutz/software/SecondaryPhenotype")
+devtools::install_github("SharonLutz/SecondaryPhenotype")
 ```
 #### Example
 For the given dataset dataSP, one can test if the SNP (i.e. x) is associated with the normally distributed secondary phenotype (i.e. y) given the case-control sampling (i.e. d)  and adjusting for a covariate (i.e. z). The code below runs this analysis.

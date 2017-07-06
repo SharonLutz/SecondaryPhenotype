@@ -1,0 +1,9 @@
+Package: SecondaryPhenotype
+Type: Package
+Title: This Package Runs the Secondary Phenotype Genetic Analysis
+Version: 1.0
+Date: 2016-08-29
+Author: Sharon Lutz, Annie Thwing
+Maintainer: Annie Thwing <annie.thwing@ucdenver.edu>
+Description: Use proportional odds logistic regression to test for the association between a SNP (i.e. x) and secondary phenotype (i.e. y) while accounting for the ascertainment bias due to case-control sampling (i.e. d).
+License: GPL-2

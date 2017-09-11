@@ -36,3 +36,5 @@ Response: as.factor(x)
 
 #### Reference
 **Lutz SM**, Hokanson JE, Lange C. (2014) An Alternative Hypothesis Testing Strategy for Secondary Phenotype Data in Case-Control Genetic Association Studies. *Frontiers in Genetics*. 5 (188).
+
+

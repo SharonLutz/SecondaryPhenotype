@@ -7,9 +7,9 @@ install.packages("devtools") # devtools must be installed first
 devtools::install_github("SharonLutz/SecondaryPhenotype")
 ```
 #### Example
-For the given dataset dataSP, one can test if the SNP (i.e. x) is associated with the normally distributed secondary phenotype (i.e. y) given the case-control sampling (i.e. d)  and adjusting for a covariate (i.e. z). The code below runs this analysis.
+For the given dataset dataSP, one can test if the SNP (i.e. x) is associated with the normally distributed secondary phenotype (i.e. y) given the case-control sampling (i.e. d)  and adjusting for a confounder (i.e. z). The code below runs this analysis.
 ```
-library(SecondaryPhenotype)
+library(SecondaryPhenotype) #load the library SecondaryPhenotype
 ?SecondaryPhenotype # For details on how to use the function
 
 data("dataSP")
@@ -21,7 +21,7 @@ SecondaryPhenotype(x,y,d,z,covariates=TRUE)
 ```
 
 #### Output
-For this analysis, the SNP (i.e. x) is associated with the secondary phenotype (i.e. y) given the case-control sampling (i.e. d).
+For this example, the SNP is associated with the secondary phenotype given the case-control sampling (p-value=0.0001).
 
 ```
 [1] "The SNP is associated with the secondary phenotype Y given case-control status (p-value=0.00016172135463588)."

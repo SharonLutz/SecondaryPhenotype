@@ -1,12 +1,14 @@
 ## Secondary Phenotype
 The SecondaryPhenotype R package uses proportional odds logistic regression to test for the association between a SNP (i.e. x) and secondary phenotype (i.e. y) while accounting for the ascertainment bias due to case-control sampling (i.e. d).
-#### Installation
+
+## Installation
 ```
 install.packages("devtools") # devtools must be installed first
 
 devtools::install_github("SharonLutz/SecondaryPhenotype")
 ```
-#### Example
+
+## Example
 For the given dataset dataSP, one can test if the SNP (i.e. x) is associated with the normally distributed secondary phenotype (i.e. y) given the case-control sampling (i.e. d)  and adjusting for a confounder (i.e. z). The code below runs this analysis.
 ```
 library(SecondaryPhenotype) #load the library SecondaryPhenotype
@@ -20,7 +22,7 @@ z <- dataSP[,"z"]
 SecondaryPhenotype(x,y,d,z,covariates=TRUE)
 ```
 
-#### Output
+## Output
 For this example, the SNP is associated with the secondary phenotype given the case-control sampling (p-value=0.0001).
 
 ```
@@ -34,5 +36,5 @@ Response: as.factor(x)
 2 y + d + z       995    1871.04 1 vs 2     1 14.23058 0.0001617214
 ```
 
-#### Reference
+## Reference
 **Lutz SM**, Hokanson JE, Lange C. (2014) An Alternative Hypothesis Testing Strategy for Secondary Phenotype Data in Case-Control Genetic Association Studies. *Frontiers in Genetics*. 5 (188).
